@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('checkout') {
       steps {
-        git(url: 'git@github.com:practicaljenkins/python-project.git', branch: 'master', credentialsId: '597e1eb7-0133-469d-90f4-cf78e915c456')
+        git(url: 'https://github.com/rajanirugur/python-project.git', branch: 'master')
       }
     }
     stage('build') {
